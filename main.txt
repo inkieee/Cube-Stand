@@ -1,17 +1,17 @@
 (Illusion Cube Stand - O0002)
 (3/4" ENDMILL SQUARE FLUTE)
 
-Subprogram in O0003
+(Subprogram in O0003)
 
-G54 X-9.8160 Y-7.0010 Z5.2350 (PRZ)
-TLO = -20.0343 
-PRZ = <X(G54) + 2", Y(G54) + 2", Z(G54)>
-Cut height = -20.0343 +5.2350 -.25 = -15.0493
+(G54 X-9.8160 Y-7.0010 Z5.2350 (PRZ))
+(TLO = -20.0343)
+(PRZ = <X(G54) + 2", Y(G54) + 2", Z(G54)>)
+(Cut height = -20.0343 +5.2350 -.25 = -15.0493)
 
-Registers:
-D71 = 15/8"
-D72 = 9/8"
-D73 = 3/8"
+(Registers:)
+(D71 = 15/8")
+(D72 = 9/8")
+(D73 = 3/8")
 
 G59 G00 G20 G91 G17 G49 G40 G80 (Header)
 G91 G30 Z0 (Move to tool change)
@@ -30,6 +30,6 @@ G01 X.5303 Y-3.5 (Reposition to AA)
 G01 Z-15.0493 F_ (Redrop to cut height)
 G42 D73 X.5303 Y-3 (Envoke CDC #3)
 M98 P0003 (Call subprogram #3)
-G30 G91 Z0 (Part Presentation)
-G30 Y0
-M02
+G30 G91 Z0 (Part Presentation A)
+G30 Y0 (Part Presentation B)
+M02 (End of Program)
