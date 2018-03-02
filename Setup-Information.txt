@@ -3,14 +3,36 @@ Program O0002
 Machine 15
 Subprogram in O0003
 
-Edge of stock: X-9.8160 Y-7.0010 Z5.2350
+Fixture Offset (corner): X-9.8160 Y-7.0010 Z5.2350
 PRZ = <X(G54) + 2", Y(G54) + 2", Z(G54)>
-G54 X-7.8160 Y-5.0010 Z5.2350
+PRZ = G54 X-7.8160 Y-5.0010 Z5.2350
 
 TLO = -20.0343
-Cut height = -20.0343 +5.2350 -.25 = -15.0493
+Cut height = -20.0343 + 5.2350 -.25 = -15.0493
 
 Registers:
 D71 = 15/8"
 D72 = 9/8"
 D73 = 3/8"
+
+
+6061-T6 Aluminum
+Feed and Speed Calculation:
+
+S = 3.42*(V_c/D)
+F = S*N*f_c
+
+Tool: 3/4" Square Flute Endmill
+How many flutes?
+What material bit?
+
+Slotting
+Axial depth of cut = .25" 
+V_c = 
+f_t = 
+
+S = 3.42*()/()
+F = (S)*(flutes)*(feed/tooth)
+
+Q = (w)(d)(F_m) = 
+hp_spindle = (Q)(P) = 
