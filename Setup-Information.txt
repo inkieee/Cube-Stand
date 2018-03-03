@@ -17,20 +17,21 @@ D73 = 3/8"
 6061-T6 Aluminum
 Feed and Speed Calculation:
 
-S = 3.42*(V_c/D)
-F = S*N*f_c
-
 Tool: 3/4" Square Flute Endmill
-How many flutes?
-What material bit?
+Flutes: Guess 2
+Material: Guess HSS
 
 Slotting
-Axial depth of cut = .25" 
-V_c = 
-f_t = 
+Axial depth of cut = .25" <-------------------- Is this too high for one pass?/ Also chart doesn't have something under Slottig Al with A_d  dia/4?
 
-S = 3.42*()/()
-F = (S)*(flutes)*(feed/tooth)
+vvvvvvvvvvvvvvvvvvvvvvvvvv Using dia/2 for now vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+V_c = 375 sfpm
+f_t (feed per tooth) = f_c (feed of cutter) = chipload = .008 in/tooth 
 
-Q = (w)(d)(F_m) = 
-hp_spindle = (Q)(P) = 
+S = 3.42*(V_c/D)
+F = S*N*f_c
+S = 3.42*(V_c)/(D) = 3.42*(375)/(.75) = 1710 rpm
+F = (S)*(flutes)*(feed/tooth) = 1710*(2)*(.008) = 27.36 ipm
+
+Q = (w)(d)(F_m) = .75*.25*27.36 = 5.13 in^3
+hp_spindle = (Q)(P) = 5.13*.4 = 2.052 hp
