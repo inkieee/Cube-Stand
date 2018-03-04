@@ -26,7 +26,7 @@ Axial depth of cut = .25" <-------------------- Is this too high for one pass?/ 
 
 vvvvvvvvvvvvvvvvvvvvvvvvvv Using dia/2 for now vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 V_c = 375 sfpm
-f_t (feed per tooth) = f_c (feed of cutter) = chipload = .008 in/tooth 
+f_t (feed per tooth) = chipload = .008 in/tooth 
 
 S = 3.42*(V_c/D)
 F = S*N*f_c
