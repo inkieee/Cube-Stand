@@ -1,6 +1,6 @@
-(Illusion Stand Path - O0003)
+%
+(Illusion Stand Path - O3001)
 
-(G90)
 G01 X.5303 Y-1.4697 (A)
 G01 X1.4697 Y-.5303 (B)
 G03 X1.4697 Y.5303 R.74995745 (C)
@@ -11,7 +11,8 @@ G03 X-1.4697 Y-.5303 R.74995745 (G)
 G01 X-.5303 Y-1.4697 (H)
 G03 X.5303 Y-1.4697 R.74995745 (A)
 G01 X1.4697 Y-.5303 (B)
-G01 X3 Y-.5303 (CC)
+X3 Y-.5303 (CC)
 G40 D71 X3.5 Y-.5303 (DD - Disvoke CDC)
-G01 Z-14.0493 (Raise endmill 1")
-M99
+Z1.0 (Raise endmill 1")
+M99 (End subprogram)
+%
