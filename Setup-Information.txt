@@ -1,5 +1,5 @@
 Program O0002
-1-3/4" Parallels
+1-3/8" Parallels
 Machine 15
 Subprogram in O0003
 
