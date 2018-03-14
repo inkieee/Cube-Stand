@@ -1,16 +1,17 @@
-Program O0002
+Program O3000
 1-3/8" Parallels
+T06 2-Flute 3/4" Square Endmill
 Machine 15
 Subprogram in O0003
 
 PRZ = G54 X-9.8160 Y-7.0010 Z5.2350
 
 TLO = -20.0343
-Cut height = -20.0343 + 5.2350 -.25 = -15.0493
+(Cut height = -20.0343 + 5.2350 -.25 = -15.0493)
 
 Registers:
-D71 = 1.375"
-D72 = .875"
+D71 = 1.175"
+D72 = .775"
 D73 = .375"
 
 
@@ -25,13 +26,13 @@ Slotting
 Axial depth of cut = .25" <-------------------- Is this too high for one pass?/ Also chart doesn't have something under Slottig Al with A_d  dia/4?
 
 vvvvvvvvvvvvvvvvvvvvvvvvvv Using dia/2 for now vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-V_c = 375 sfpm
-f_t (feed per tooth) = chipload = .008 in/tooth 
+V_c = 300 sfpm (given)
+f_t (feed per tooth) = chipload = .006 in/tooth (given)
 
 S = 3.42*(V_c/D)
 F = S*N*f_c
-S = 3.42*(V_c)/(D) = 3.42*(375)/(.75) = 1710 rpm
-F = (S)*(flutes)*(feed/tooth) = 1710*(2)*(.008) = 27.36 ipm
+S = 3.42*(V_c)/(D) = 3.82*(300)/(.75) = 1528rpm
+F = (S)*(flutes)*(feed/tooth) = 1528*(2)*(.006) = 18.336ipm
 
 Q = (w)(d)(F_m) = .75*.25*27.36 = 5.13 in^3
 hp_spindle = (Q)(P) = 5.13*.4 = 2.052 hp
